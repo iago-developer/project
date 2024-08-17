@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+  color: #000;
+}
+
+body > .container {
+  height: 100%;
+  width: 100%;
+}
+
+body > .container > .container-table {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+body > .container > .container-table > table > caption {
+  background-color: #340953;
+  border: 2px solid #340953;
+  border-bottom: none;
+  color: #fff;
+  text-align: start;
+}
+
+body > .container > .container-table > table > caption > select {
+  background-color: #340953;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px;
+}
+
+body > .container > .container-table > table {
+  height: 100%;
+  width: 100%;
+  border: 2px solid #340953;
+  color: #340953;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+body > .container > .container-table > table > thead > tr > th {
+  background-color: #340953;
+  color: #fff;
+  border: 2px solid #340953 !important;
+  padding: 5px;
+  position: sticky;
+  top: -1;
+  z-index: 2;
+}
+
+body > .container > .container-table > table > tbody > tr > td {
+  border: 2px solid #340953;
+  padding: 5px;
+  color: #340953;
+}
