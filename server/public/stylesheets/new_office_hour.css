@@ -76,6 +76,7 @@ body > .container > .container-form > form > .form-content > button {
   margin: 4px;
   padding: 10px 0px 10px 0px;
   transition: all .6s;
+  cursor: pointer;
 }
 
 body > .container > .container-form > form > .form-content > button:hover, body > .container > .container-form > form > .form-content > #botao_submit:hover {
@@ -101,4 +102,5 @@ body > .container > .container-form > form > .form-content > #botao_submit {
   width: 200%;
   display: none;
   transition: all .6s;
+  cursor: pointer;
 }
