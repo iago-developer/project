@@ -1,10 +1,19 @@
 var express = require('express');
 var router = express.Router();
+var Cooks = require('../models/Cooks');
+var Waiters = require('../models/Waiters');
 
 /* GET users listing. */
-router.get('/user/user', function(req, res, next) {
-  res.render("user/user", { title: "Página do Usuário" });
+router.get('/user/user', async function(req, res, next) {
+  const cooks = await Cooks.find();
+  const waiters = await Waiters.find();
+
+  waiters.forEach(waiter => {
+    console.log(waiter.fullname)
+  });
+  res.render("user/user", { title: "Página do Usuário", cooks, waiters });
 });
+
 router.get('/user/redirect', function(req, res, next) {
   res.render("user/redirect", { title: "Página do Usuário" });
 });

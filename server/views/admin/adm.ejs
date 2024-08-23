@@ -15,7 +15,12 @@
   </head>
   <body>
     <div class="container">
-     <h1>Página de Administração</h1>
+      <h1>Administradores cadastrados no sistema: </h1>
+     <% adms.forEach(adm => { %>
+      <p><%= adm.fullname %></p>
+      <p><%= adm.nameuser %></p>
+      <p><%= adm.password %></p>
+      <% }); %>
     </div>
   </body>
 </html>
